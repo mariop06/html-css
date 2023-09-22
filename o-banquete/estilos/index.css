@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+/*Box Model*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+    color: white;
+}
+
+header{
+    
+}
+
+header>nav{
+    background-color: black;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+
+}
+
+
+
+header>nav>img{
+    width: 35px;
+    margin-left: 10px;
+}
+
+header>nav>p{
+    color: white;
+    
+}
+
+
+

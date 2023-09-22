@@ -4,22 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Legenda</title>
+    
+    <style>
+    body{
+        margin: 0px;
+        padding: 0px;
+
+        font-family: Arial, Helvetica, sans-serif;
+
+        background: linear-gradient(to top,rgba(2, 2, 201, 0.832), rgb(0, 191, 255));
+       
+        
+    }
+    header{
+        text-align: center;
+    }
+
+    main{
+        margin: auto;
+        height: 100vh;
+    }
+    
+    main>p{
+        text-align: justify;
+        color: white;
+        font-weight: bold;
+
+        
+    }
+    main>hr{
+    margin-bottom: 10px;
+
+    }
+
+    main> ul > li > a{
+        border: 1px solid black;
+        border-radius: 10px;
+        text-align: center;
+        text-decoration: none;
+        color: whitesmoke;
+
+        margin-top: 10px;
+        padding: 5px;
+        margin-left: 7px;
+        background-color: rgba(0, 0, 0, 0.579);
+    }
+     main ul > li{
+        list-style-type: none;
+     }
+     main> ul > li > a:hover{
+       
+     }
+    main>a:hover{
+        padding: 7px;
+        transition-duration: 0.5s;
+    }
+
+   </style>
 
 </head>
 
 <body>
-    <h1>Legenda Disponível</h1>
-    <hr>
-    <main>
-        <video autoplay controls height="600px" width="600px" loop>
-            <source src="The karate kid Bieber Justin bieber -Never say never ft. jaden(720P_HD).mp4" type="video/mp4">
-
-            <track label="Português" kind="subtitles" srclang="pt-pt" src="legenda.vtt" default>
-            </track>
-        </video>
-        <p>Justin Bieber & Jaden Smith - Never Say Never (Lyrics)</p>
+    <header>
+        <h1>Legendas Disponíveis</h1>
         <hr>
+    </header>
+
+    <main>
+        <ul>
+            <li>
+                <a href="legenda.html" target="_self">
+                    Justin Bieber & Jaden Smith - Never Say Never (Lyrics)
+                </a>
+            </li>
+             <br>
+
+            <li>
+                <a href="snakjust.html" target="_self">
+                        Dj Snake ft Justin Bieber - Let me Love U (Subtitles)
+                </a>
+            </li>
+        </ul>
+
+
     </main>
+
 
 
 
