@@ -8,6 +8,7 @@
 
 body, html{
 background-color: gray;
+
 }
 
 header{
@@ -32,7 +33,7 @@ span#burguer:hover{
 }
 
 menu{
-    display: none;
+    display:none;
 }
 
 menu>ul{
@@ -57,7 +58,7 @@ menu>ul>li>a:hover{
 
 
 main{
-    width: 90vw;
+    width: 85vw;
     background-color: white;
     margin: auto;
     margin-top: 20px;
@@ -73,6 +74,7 @@ article>p{
     text-align: justify;
     margin-bottom: 20px;
     text-indent: 20px;
+
 }
 
 
