@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Digite aqui o seu texto</h1>
+    <textarea name="txttexto" id="texto" cols="30" rows="10"></textarea>
+    <button onclick="executar()">Executar</button>
+    <script>
+        var texto = document.getElementById("texto")
+        addEventListener("onload", focar())
+        function executar(){
+            var texto1= String(texto.value)
+            var div = texto1.split("")
+            var divcopy=div
+            var val
+            for(var t=0;t<2;t++){
+            for(var i=0; i<div.length; i++){
+                for(var c=Number(i)+1; c<divcopy.length; c++){
+                    if(div[i]==divcopy[c]){
+                        divcopy[c]=""
+                    }
+                }
+                div=divcopy
+            }
+            var textf= divcopy.join("")
+        }
+        document.write(`<textarea name="texto" cols="30" rows="10"> ${textf}</textarea>`)
+    }
+        function focar() {
+            texto.focus()
+        }
+    </script>
+</body>
+</html>

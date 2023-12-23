@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 6</title>
+
+    <style>
+        p{
+           margin: auto;
+            width: 200px;
+            height: 100px;
+            background-color: gray;
+
+            text-align: center;
+            align-items: center;
+
+            font-size: 80px;
+        }
+    </style>
+</head>
+<body>
+    <p id="contagem">0</p>
+    
+    <script>
+        var i=1;
+        const conta=setInterval(()=>{
+            const p=document.getElementById('contagem');
+                if(i%3==0){
+                    p.innerHTML='Fizz';
+                } else if(i%5==0){
+                    p.innerHTML='Buzz';
+                } else if(i%3==0 && i%5==0){
+                    p.innerHTML='FizzBuzz';
+                } else{
+                    p.innerHTML=i;
+                } if(i==100){
+                    setTimeout();
+                }
+            i++;
+        },500);
+    </script>
+</body>
+</html>

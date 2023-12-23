@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(10, 3, 56);
+        }
+        header{
+            margin: auto;
+            max-width: max-content;
+            color: white;
+        }
+        header>p{
+            font-size: 40px;
+        }
+        main{
+            margin: auto;
+            max-width: max-content;
+        }
+        label{
+
+            background-color: rgba(128, 128, 128, 0.331);
+            color: rgb(255, 6, 110);
+           
+            margin: auto;
+            font-size: 100px;
+        }
+
+        span{
+            color: white;
+            padding: 32px;
+        }
+
+    </style>
+
+</head>
+
+<body class="relogio">
+    <header>
+        <p>
+            Seja Pontual
+        </p>
+    </header>
+
+<main>
+    <p>
+        <label id="hora">04</label>
+        <label id="min">23</label>
+        <label id="sec">55</label>
+        <label id="mili">410</label>
+    </p>
+
+    <span>Hours</span>
+    <span>Minuts</span>
+    <span>Seconds</span>
+    <span>Mili</span>
+</main>
+
+
+
+
+<script>
+    const relogio = setInterval(function time(){
+        let data = new Date();
+        let hora1= document.getElementById('hora');
+        let min1= document.getElementById('min');
+        let sec1= document.getElementById('sec');
+        var mili1= document.getElementById('mili');
+
+        var hora=data.getHours();
+        var min= data.getMinutes();
+        var sec= data.getSeconds();
+        var mil= data.getMilliseconds();
+        
+        if(hora>=0 && hora<10){
+            hora1.innerHTML='0'+hora;
+        } else{
+            hora1.innerHTML=hora;
+        }
+
+        if(min>=0 && min<10){
+            min1.innerHTML='0'+min;
+        } else{
+            min1.innerHTML=min;
+        }
+
+        if(sec>=0 && sec<10){
+            sec1.innerHTML='0'+sec;
+        } else{
+            sec1.innerHTML=sec;
+        }
+            mili1.innerHTML=mil;
+        
+    })
+        
+</script>
+</body>
+</html>

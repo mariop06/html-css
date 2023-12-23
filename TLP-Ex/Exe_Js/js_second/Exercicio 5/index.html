@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 5</title>
+</head>
+<body>
+    <script>
+        let num= new Array();
+        let pares=new Array();
+        let impares= new Array();
+        var i=0;
+       do{
+        num[i]=Number(prompt('Digite o numero: '));
+        var conf=confirm('Deseja preencher o Vector?');
+
+        if(num[i]%2==0){
+            pares[i]=num[i];
+            console.log(pares[i]);
+        } else{
+            if(num[i]%2!=0){
+                impares[i]=num[i];
+            }
+        }
+            i++;
+       }while(conf==true)
+       
+        for(var i=0; i<pares.length; i++){
+            console.log('Numeros pares são: '+pares[i]);
+        }      
+        for(var i=0; i<impares.length; i++){
+            console.log('Numeros impares são: '+impares[i]);
+        }        
+    </script>
+    
+</body>
+</html>

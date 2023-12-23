@@ -1,0 +1,148 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#divp{
+    border: 1px solid;
+    border: none;
+    width: 770px;
+    height: 550px;
+    margin-top: 20px;
+    margin-left: 300px;
+    background-color: rgb(236, 252, 252);
+}
+#divs{
+    position: relative;
+    border: 1px solid;
+    width: 660px;
+    height: 440px;
+    top: 50px;
+    left: 60px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+}
+#divt{
+    position: relative;
+    border: 1px solid;
+    width: 200px;
+    height: 405px;
+    left: 10px;
+    top: -337px;
+    border-radius: 10px;
+    background-color: rgb(45, 45, 255) ;
+}
+#bt{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: white;
+
+    border: 1px solid white;
+}
+#bt1{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    position: relative;
+    top: -60px;
+
+    border: 1px solid white;
+}
+#bt2{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    position: relative;
+    top: -120px;
+
+    border: 1px solid white;
+}
+#bt3{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    position: relative;
+    top: -177px;
+
+    border: 1px solid white;
+}
+#fo{
+    margin-left: 15px;
+    margin-top: 20px;
+}
+#formulario{
+    position: relative;
+    left: 300px;
+}
+#NEXT{
+    width: 80px;
+    height: 35px;
+    border-radius: 8px;
+    color: white;
+    background-color: rgb(65, 65, 145);
+    position: relative;
+    top: 50px;
+    margin-left: 195px;
+
+    border: none;
+}
+#INPUT{
+width: 268px;
+height: 25px;
+border-radius: 5px;
+border: 1px solid black
+}
+#personal{
+    color: rgb(8, 8, 92);
+    position: relative;
+    top: 15px;
+}
+#pe{
+    color: rgb(8, 8, 92);
+    position: relative;
+    top: 10px;
+}
+#STEP1{
+    position: relative;
+    top: -55px;
+    margin-left: 60px;
+    color: white;
+
+}
+#Y{
+    color: white;
+    font-size: 15px;
+}
+#STEP2{
+    position: relative;
+    top: -114px;
+    margin-left: 60px;
+    color: white;
+}
+#Y1{
+    color: white;
+    font-size: 15px;
+}
+#STEP3{
+    position: relative;
+    top: -171px;
+    margin-left: 60px;
+    color: white;
+}
+#Y2{
+    color: white;
+    font-size: 15px;
+}
+#STEP4{
+    position: relative;
+    top: -233px;
+    margin-left: 60px;
+    color: white;
+}
+#Y3{
+    color: white;
+    font-size: 15px;
+}
+
+

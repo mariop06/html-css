@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 4</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(0, 0, 5);
+            color: white;
+            
+            width: 780px;
+            margin: auto;
+           
+        }
+
+        main{
+           /* background-color: green;*/
+            max-width: max-content;
+
+            margin: auto;
+        }
+
+        aside{
+            background-color: rgba(3, 3, 38, 0.884);
+
+            width: 200px;
+            height: 450px;
+            
+            border-radius: 20px;
+
+            display: grid;
+            float: left;
+            margin: auto;
+
+        }
+
+        article{
+            background-color: rgb(86, 44, 237);
+            
+            padding: 10px;
+            height: 250px;
+            border-radius: 20px;
+            
+        }
+
+        p{
+           padding-left: 10px;
+           font-size: large;
+        }
+
+
+        div{
+            background-color: #1E1F4D;
+           
+            margin: 20px;
+            margin: auto;
+        }
+
+        .work{
+           
+           position: relative;
+           left: -20px;
+           margin: auto;
+           border-radius: 20px;
+            
+           width: 240px;
+           height: 153px;
+        
+          
+        }
+       
+        .play{
+            position: relative;
+            bottom: 210px;
+            left: 240px;
+
+            border-radius: 20px;
+            padding: 20px;
+
+            width: 200px;
+           height: 150px;
+           margin: 20px;
+           
+
+        }
+
+        .study{
+            position: relative;
+            bottom: 420px;
+            left: 510px;
+
+            border-radius: 20px;
+            padding: 20px;
+
+            width: 200px;
+           height: 150px;
+           margin: 20px;
+        }
+        .exercise{
+            position: relative;
+            bottom: 368px;
+            left: -30px;
+
+            border-radius: 20px;
+            padding: 20px;
+
+            width: 200px;
+           height: 150px;
+           margin: 20px;
+        }
+
+        .social{
+            position: relative;
+            bottom: 578px;
+            left: 245px;
+
+            border-radius: 20px;
+            padding: 20px;
+
+            width: 200px;
+           height: 150px;
+           margin: 20px;
+        }
+
+        .self{
+            position: relative;
+            bottom: 787px;
+            left: 515px;
+
+            border-radius: 20px;
+            padding: 20px;
+
+            width: 200px;
+           height: 150px;
+           margin: 20px;
+        }
+        #circle{
+            border-radius: 500px;
+
+            height: 70px;
+            width: 70px;
+
+            position: relative;
+            left: -4%;
+            top: -8px;
+        }
+
+        .aumentar{
+            font-size: 30px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .aumentar2{
+            font-size: 50px;
+            padding: 0px;
+            margin: 0px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .report{
+            color: rgba(163, 157, 157, 0.938);
+        }
+        .report:hover{
+            color: white;
+        }
+
+        .separate{
+            display: grid;
+            float: right;
+        }
+
+        .other{
+           background-color: #FC8C65;
+           position: relative;
+           right: 30px;
+           border-radius: 20px;
+           padding: 20px;
+
+           width: 200px;
+           height: 150px;
+           margin: 20px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <aside>
+      <article>
+        <p><img src="1724.jpg" alt="Foto Mário" id="circle"></p>
+        <p class="report">Report for</p>
+        <p class="aumentar">Mário Paulo</p>
+      </article>
+
+        <p class="report">Daily</p>
+        <p class="report">Weekly</p>
+        <p class="report">Monthly</p>
+       
+    </aside>
+
+    <main>
+        
+       
+            <div class="other">
+                <div class="work">
+                    <p>
+                        <label for="">work</label>
+                        <label for="" class="separate">...</label>
+                    </p>
+                    <p class="aumentar2">32HRS</p>
+                    <p class="report">Last week - 36hrs</p>
+                </div>
+            </div>
+        
+
+       
+            <div class="play">
+                <p>
+                    <label for="">Play</label>
+                    <label for=""  class="separate">...</label>
+                </p>
+                <p class="aumentar2">10HRS</p>
+                <p class="report">Last week - 8hrs</p>
+            </div>
+      
+        
+       
+            <div  class="study">
+                <p>
+                    <label for="">Study</label>
+                    <label for="" class="separate">...</label>
+                </p>
+                <p class="aumentar2">4HRS</p>
+                <p class="report">Last week - 7hrs</p>
+            </div>
+       
+
+        <div class="exercise">
+            <p>
+                <label for="">Exercise</label>
+                <label for="" class="separate">...</label>
+            </p>
+
+            <p class="aumentar2">4HRS</p>
+            <p class="report"> Last week - 5hrs</p>
+        </div>
+        <div class="social">
+            <p>
+                <label for="">Social</label>
+                <label for="" class="separate">...</label>
+            </p>
+
+            <p class="aumentar2">32HRS</p>
+            <p class="report">Last week - 10hrs</p>
+        </div>
+
+            <div class="self">
+                <p>
+                    <label for="">Self Care</label>
+                    <label for="" class="separate">...</label>
+                </p>
+                <p class="aumentar2">2HRS</p>
+                <p class="report">Last week - 2hrs</p>
+            </div>
+        
+
+
+    </main>
+</body>
+
+</html>

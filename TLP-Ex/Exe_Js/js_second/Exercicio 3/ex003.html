@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var texto=prompt("Digite os números(a;b;...;z): ")
+        var nums= texto.split(";")
+        var soma=0
+        var fac=1
+        for(let i=0; i<nums.length;i++){
+            soma+=Number(nums[i])
+        }
+        for(let i=2; i<=soma;i++){
+            fac*=i
+        }
+        document.write(`A soma dos números digitados é: ${soma}<br>O Factorial da soma dos números é: ${fac}`)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

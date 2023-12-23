@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=i, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{   
+            margin: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            gap: 10px;
+            font-size: 20pt;
+        }
+        input{
+            padding: 10px;
+            width: 400px;
+        }
+        button{
+            padding: 10px;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <label for="txtnotas">Notas: </label>
+    <input type="text" name="txtnotas" id="txtnotas">
+    <button onclick="execute()">Executar</button>
+    <script>
+        var txt=document.getElementById("txtnotas")
+        addEventListener("onload",foco())
+        function execute(){
+            var media=0
+            var texto=String(txt.value)
+            var notas=texto.split(",")
+            var qtd= notas.length
+            for(let i= 0; i<qtd;i++){
+                media+=Number(notas[i])
+            }
+            
+            document.write(`Média das notas: ${media/qtd}`)
+        }
+        function foco(){
+            txt.focus()
+        }
+    </script>
+</body>
+</html>

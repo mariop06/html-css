@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 10</title>
+  </head>
+<body>
+    <input type="number" name="Num" id="Num1">
+    <input type="number" name="Num" id="Num2">
+    <input type="button" value="Gerar Calculos" id="calculo">
+    
+</body>
+    <script>
+        const buttom = document.getElementById('calculo');
+        const num1= document.getElementById('Num1');
+        const num2= document.getElementById('Num2');
+
+        const soma = document.createElement('p');
+        const sub = document.createElement('p');
+        const mult = document.createElement('p');
+        const div = document.createElement('p');
+
+        const resultado = document.createElement('p');
+        const resultado2 = document.createElement('p');
+        const resultado3 = document.createElement('p');
+        const resultado4 = document.createElement('p');
+
+        buttom.addEventListener('click', ()=>{
+            soma.textContent=(Number(num1.value)+Number(num2.value));
+            sub.textContent=(Number(num1.value)%Number(num2.value));
+            mult.textContent=(Number(num1.value)*Number(num2.value));
+            div.textContent=(Number(num1.value)/Number(num2.value));
+            
+            resultado.textContent= `${num1.value}  + ${num2.value} = ${soma.textContent}`;
+            resultado2.textContent= `${num1.value}  % ${num2.value} = ${sub.textContent}`;
+            resultado3.textContent= `${num1.value}  * ${num2.value} = ${mult.textContent}`;
+            resultado4.textContent= `${num1.value}  / ${num2.value} = ${div.textContent}`;
+
+            document.body.appendChild(resultado);
+            document.body.appendChild(resultado2);
+            document.body.appendChild(resultado3);
+            document.body.appendChild(resultado4);
+        })
+    </script>
+</html>

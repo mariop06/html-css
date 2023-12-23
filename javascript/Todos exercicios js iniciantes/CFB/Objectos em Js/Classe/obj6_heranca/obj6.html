@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conceito de heranca</title>
+
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+
+            border: none;
+            box-sizing: border-box;
+            font-size: large;
+        }
+
+        .carros{
+            display: flex;
+            width: 100%;
+            padding: 5px;
+            border: 3px solid black;
+            border-radius: 10px;
+
+            box-sizing: border-box;
+            
+        }
+
+        #remove{
+            border-radius: 10px;
+            max-width: max-content;
+            padding: 5px;
+            height: 30px;
+            background-color: rgba(255, 0, 0, 0.571);
+        }
+        .carro{
+            border: 3px solid #008;
+            background-color: #8cf;
+            padding: 5px;
+            margin: 5px;
+
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+        }
+
+        .campoForm{
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            margin-bottom: 10px;
+        }
+
+        .campoForm input{
+            background-color: #eee;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+
+        .campoForm button{
+            background-color: #888;
+            padding: 5px;
+            border-radius: 5px ;
+        }
+    </style>
+</head>
+<body>
+    <div class="criarCarro">
+       <div class="campoForm">
+            <label for="iNome">Nome</label>
+            <input type="text" name="" id="iNome">
+       </div>
+
+       <div class="campoForm">
+            <label for="iPorta">Portas</label>
+            <input type="number" name="" id="iPorta">
+       </div>
+
+       <div class="campoForm">
+            <label for="iBlindagem">Blindagem</label>
+            <input type="number" name="" id="iBlindagem" disabled>
+       </div>
+
+       <div class="campoForm">
+            <label for="iMunicao">Municao</label>
+            <input type="number" name="" id="iMunicao" disabled>
+       </div>
+
+       <div class="campoForm">
+          <p>Tipo</p>
+            <div class="radio">
+             <input type="radio" name="rad" id="Militar" value="m"> <label for="Militar">Militar</label>
+            </div>
+      
+            <div>
+             <input type="radio" name="rad" id="normal" value="n" checked><label for="normal">Normal</label>
+            </div>
+       </div>
+
+        <div class="campoForm">
+            <input type="button" id="button" value="Adicionar">
+        </div>
+
+        <div class="carros" id="carros"></div>
+    </div>
+    
+       
+    </div>
+    
+    <script src="obj6.js"></script>
+</body>
+</html>

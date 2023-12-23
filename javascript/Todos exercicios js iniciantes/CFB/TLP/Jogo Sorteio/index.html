@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Jogo</title>
+    </head>
+    <body>
+        <input type="number" name="" id="iNum">
+        <button id="botao">Comecar</button>
+
+        <script>
+            let num=document.getElementById('iNum');
+            let botao=document.getElementById('botao');
+
+            botao.addEventListener('click',()=>{
+                let valor=Math.floor(Math.random()*21);
+                let erro=0;
+
+              
+                    while(valor != num.value){
+                        valor=Math.floor(Math.random()*21);
+                         erro++;
+                    }
+                    
+                    alert(`O Computador precisou de ${erro} tentativas!`);
+            });
+               
+        </script>
+
+    </body>
+</html>

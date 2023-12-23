@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt'br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 7</title>
+
+</head>
+
+<body id="setinter">
+    <main>
+        <p>
+            <label for="iNum">Digite o Número:</label>
+            <input type="number" name="Num" id="iNum">
+
+            <input type="button" value="Calcular o Factorial" onclick="CalcularFat()" id="nump">
+            <input type="button" value="Verificar se é Par ou Impar" onclick="CalcularP_I()">
+            <input type="button" value="Verificar se é Primo" onclick="Calcularprimo()">
+        </p>
+        <p>
+           
+        </p>
+    </main>
+    <script>
+        function CalcularFat(){
+             const num=document.getElementById('iNum');
+
+            if(num.value.length==0){
+                alert('Digite um número!');
+            } else{
+                if(0){
+                    alert(`O fatorial de ${num.value} é: ${0}`);
+                } 
+            }
+        }
+        function CalcularP_I(){
+            const num=document.getElementById('iNum');
+
+            if(num.value.length==0){
+                alert('Digite um número!');
+            } else{
+                if(num.value%2==0){
+                    alert("O numero é Par!");
+                } else{
+                    alert('O numero é impar!');
+                }
+            }
+        }
+
+        function Calcularprimo(){
+             const num=document.getElementById('iNum');
+
+            if(num.value.length==0){
+                alert('Digite um número!');
+            } else{
+                if(0){
+                    alert("O numero é Primo!");
+                } 
+            }
+        }
+
+    </script>
+</body>
+</html>

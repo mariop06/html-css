@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2</title>
+
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+
+            background-color: gray;
+        }
+
+
+        p{
+            font-size: 50px;
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body id="relogio">
+    <div>
+        <p id="contagem">10</p>
+    </div>
+
+    <script>
+        var i=30;
+        const relogio=setInterval(()=>{
+            
+            const p=document.getElementById('contagem');
+                if(i%2==0){
+                    p.style.color='red';
+                    p.innerHTML= i;
+                } if(i%2!=0){
+                    p.style.color='green';
+                    p.innerHTML= i;
+                }
+                if(i==0){
+                    setTimeout();
+                }
+          i--;
+        },500);
+    </script>
+</body>
+</html>

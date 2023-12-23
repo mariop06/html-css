@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var palavra =prompt("Digite uma palavra: ")
+        var vet = palavra.split("")
+        var nova= new Array(5)
+        var ale
+        var aleatorios= new Array()
+            for(let c=0; c<5;c++){
+                for(let i=0; i<vet.length; i++){
+                    ale=(Math.random()*(vet.length-1)).toFixed(0)
+                    aleatorios[i]=vet[ale]
+                }
+                nova[c]=aleatorios.join("")
+                alert(nova[c])
+                document.write(`${Number(c)+1}ª palavra: ${nova[c]}<br>`)
+            }
+    </script>
+</body>
+</html>

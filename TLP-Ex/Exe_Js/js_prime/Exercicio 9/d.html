@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{   
+            margin: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            gap: 10px;
+            font-size: 20pt;
+        }
+        input{
+            padding: 10px;
+            width: 400px;
+        }
+        button{
+            padding: 10px;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <label for="txtids">Idades: </label>
+    <input type="text" name="txtnotas" id="txtids" maxlength="15">
+    <button onclick="execute()">Executar</button>
+    <script>
+        var txt=document.getElementById("txtids")
+        addEventListener("onload",foco())
+        function execute(){
+            if(txt.value==""){
+                alert("Não introduziu nada ainda!")
+                foco()
+            }
+            else{
+            var texto=String(txt.value)
+            var ids=texto.split(",")
+            var qtd= ids.length
+            var mn=0,ma=0
+            for(let i=0; i<qtd; i++){
+                if(ids[i]>=18){
+                    ma++
+                }
+                else{
+                    mn++
+                }
+            }
+            document.write(`Maiores de 18: ${ma} <br> Menores de 18: ${mn}`)
+        }
+        }
+        function foco(){
+            txt.focus()
+        }
+    </script>
+</body>
+</html>

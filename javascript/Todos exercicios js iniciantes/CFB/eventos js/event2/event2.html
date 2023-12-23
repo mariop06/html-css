@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando Evento em JS</title>
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        main{
+            margin: 20px;
+            margin: 30px;
+            display: flex;
+            border: none;
+            background-color: white;
+        }
+        .caixa{
+           margin: auto;
+            border: 1px solid black;
+            width: 50%;
+            min-width: 100px;
+            max-width: 300px;
+            height: 500px;
+
+            border-radius: 10px;
+            text-align: center;
+            
+        }
+        .caixa2{
+            width: 50%;
+            height: 500px;
+
+        }
+        .buttom{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            position: relative;
+            top: 200px;
+            margin: 10px;
+            padding: 5px;
+
+            text-align: center;
+            width: 200px;
+            height: 50px;
+
+            background-color: blue;
+            border: none;
+            color: white;
+            font-size: 15px;
+            border-radius: 10px;
+            
+        }
+
+        .curso{
+            
+            text-align: center;
+            border: 1px solid black;
+            border-radius: 8px;
+
+            padding: 37px;
+            margin: 5px;
+            background-color: aqua;
+            color: white;
+
+            color: white;
+            font-size: 16px;
+        }
+
+        .curso:hover{
+            border: 2px solid gray;
+            
+            
+        }
+
+
+        .selecionado{
+            background-color: gray;
+
+        }
+
+    </style>
+
+</head>
+<body>
+    <main>
+        <div id="caixa1" class="caixa" >
+            <div id="c1" class="curso">C</div>
+            <div id="c2" class="curso">C++</div>
+            <div id="c3" class="curso">C#</div>
+            <div id="c4" class="curso">HTML</div>
+            <div id="c5" class="curso">Javascript</div>
+        </div>
+
+        <div><button id="btn_Copiar" class="buttom"> <-Copiar-></button></div>
+        
+        <div id="caixa2" class="caixa"></div>
+    </main>
+
+    <script src="event2.js"></script>
+    
+</body>
+</html>

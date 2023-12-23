@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+        body{   
+            margin: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            gap: 10px;
+            font-size: 20pt;
+        }
+        input{
+            padding: 10px;
+            width: 400px;
+        }
+        button{
+            padding: 10px;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <label for="txtinf">Insira a altura e sexo de 5 pessoas(h,s;): </label>
+    <input type="text" name="txtinf" id="txtinf">
+    <button onclick="execute()">Executar</button>
+    <script>
+        var txt=document.getElementById("txtinf")
+        addEventListener("onload",foco())
+        function execute(){
+            var max=0
+            var indice,contmasc=0,contfem=0,gen
+            if(txt.value==""){
+                alert("Não introduziu nada ainda!")
+                foco()
+            }
+            else{
+            var texto=String(txt.value)
+            if(texto.substring(Number(texto.length)-1,Number(texto.length))==";"){
+                var inf=texto.split(";")
+                var inf1=[
+                    [inf[0].substring(0,inf[0].indexOf(",")),inf[0].substring(inf[0].indexOf(",")+1,inf[0].length)],
+                    [inf[1].substring(0,inf[1].indexOf(",")),inf[1].substring(inf[1].indexOf(",")+1,inf[1].length)],
+                    [inf[2].substring(0,inf[2].indexOf(",")),inf[2].substring(inf[2].indexOf(",")+1,inf[2].length)],
+                    [inf[3].substring(0,inf[3].indexOf(",")),inf[3].substring(inf[3].indexOf(",")+1,inf[3].length)],
+                    [inf[4].substring(0,inf[4].indexOf(",")),inf[4].substring(inf[4].indexOf(",")+1,inf[4].length)]   
+                ]
+                for(var i=0; i<5; i++){
+                    for(var c=0; c<2; c++){
+                        if(c==0){
+                            if(inf1[i][c]>max){
+                                max=inf1[i][c]
+                                indice=i
+                            }
+                        }
+                        else{
+                            if(inf1[i][c].toUpperCase()=="F"){
+                                contfem++
+                            }
+                            if(inf1[i][c].toUpperCase()=="M"){
+                                contmasc++
+                            }
+                        }
+                    }
+                }
+                if(inf1[indice][1].toUpperCase()=="M"){
+                    gen="Masculino"
+                }
+                if(inf1[indice][1].toUpperCase()=="F"){
+                    gen="Feminino"
+                }
+                document.write(`Feminino: ${contfem}<br>Masculino: ${contmasc}<br>Maior altura: ${max}m (gênero:${gen})`)
+            }
+            else{
+                alert("O último registo tem que conter ';'")
+            }
+    }
+        }
+        function foco(){
+            txt.focus()
+        }
+    </script>
+</body>
+</html>

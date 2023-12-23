@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        var ja=false
+        var i=0
+        var cont=0
+        var contnegs=0
+        var nums= new Array()
+        var arr;
+        while(ja==false){
+            nums[i]=Number(prompt("Digite um número"))
+            console.log(nums[i]);
+            if(Number(nums[i])<0){
+                contnegs++
+                arr=nums.sort()
+                alert(contnegs)
+                if(Number(i) > 2){
+                    for(var u=2; u<contnegs; u++){
+                        if(arr[u]==arr[u-1] && arr[u]==arr[u-2]){
+                            cont++;
+                        }
+                    }
+                }
+                if(cont==1){
+                    ja=true
+                }
+            }
+            i++
+
+        }
+
+        
+    </script>
+</body>
+</html>

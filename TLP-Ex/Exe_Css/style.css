@@ -1,0 +1,183 @@
+body{
+    background-color: rgb(22, 19, 41);
+    color: white; 
+}
+.div_main{
+    max-width: max-content;
+    margin: auto;
+}
+.div_main2{
+
+    display: flex;
+}
+.div_main3{
+
+    display: flex;
+}
+.div_main3_in3{
+
+    display: grid;
+}
+.div1_in1{
+    background-color: rgb(2, 2, 39);
+    margin-right: 10px;
+    padding: 20px;
+    border: 3px solid;
+    border-color: blue;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    width: 200px;
+}
+.div1_in2{
+    background-color: rgb(2, 2, 39);
+    margin-right: 10px;
+    padding: 20px;
+    border: 3px solid;
+    border-color: blue;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    width: 200px;
+}
+.div1_in3{
+    background-color: rgb(2, 2, 39); 
+    margin-right: 10px;
+    padding: 20px;
+    border: 3px solid;
+    border-color: rgb(246, 246, 110);
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    width: 200px;
+}
+.div1_in4{
+    background-color: rgb(2, 2, 39);
+    margin-right: 10px;
+    padding: 20px;
+    border: 3px solid;
+    border-color: red;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    width: 200px;
+}
+.div2_in1{
+    background-color: rgb(2, 2, 39);
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    width: 200px;
+}
+.div2_in2{
+    background-color: rgb(2, 2, 39);
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    width: 200px;
+}
+.div2_in3{
+    background-color: rgb(2, 2, 39); 
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    width: 200px;
+}
+.div2_in4{
+    background-color: rgb(2, 2, 39);
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    width: 200px;
+}
+.div2_2_1{
+    display: grid;
+}
+.div2_2_2{
+    display: grid;
+}
+.div2_3_2{
+    display: grid;
+}
+.div2_3_2{
+    display: grid;
+}
+.div2_4_2{
+    display: grid;
+}
+.div2_4_2{
+    display: grid;
+}
+input[type="checkbox"]{
+    appearance: none;
+    width: 35px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: rgb(13, 13, 49);
+}
+input[type="checkbox"]::before{
+    position: absolute;
+    background-color: orange;
+    width: 15px;
+    height: 10px;
+    content: "";
+    border-radius: 10px;
+}
+.p0{
+    text-align: center;
+    color: rgb(170, 168, 166);
+}
+.p1{
+    color: rgb(184, 182, 180);
+    letter-spacing: 2px;
+    text-align: center;
+}
+.p2{
+    text-align: center;
+    color: green;
+}
+.p3{
+    text-align: center;
+    color: red;
+}
+.p4{
+    color: rgb(170, 168, 166);
+}
+.p5{
+    color: green;
+    font-size: small;
+    position: relative;
+    top: -5px;
+    left: 150px;
+    margin-bottom: -10px; 
+}
+.p6{
+    color: red;
+    font-size: small;
+    position: relative;
+    top: -5px;
+    left: 150px;
+    margin-bottom: -10px; 
+}
+.p7{
+    color: rgb(170, 168, 166);  
+    margin-top: -5px; 
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+.str1{
+    text-align: center; 
+    font-size: 30px;
+    
+}
+.str2{
+    font-size: 25px; 
+    margin-bottom: -25px;  
+}
+.str3{
+    font-size: 25px;   
+}
+.str4{
+    font-size: 25px; 
+    margin-bottom: 10px;  
+}

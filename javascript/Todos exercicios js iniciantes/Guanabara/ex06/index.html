@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controlo Rodoviário</title>
+
+</head>
+<body>
+        <h1>Sistema de Multas</h1>
+
+            <p>
+                <label for="iVel">Velocidade do carro</label>
+                <input type="number" name="Vel" id="iVel" placeholder="km/h">
+                <input type="button" value="Verificar" onclick="verif()">
+            </p>
+           
+
+        <p>
+            <label id="res">Notificação: </label>
+        </p>
+
+
+
+        <script>
+              
+            function verif(){
+                var txt_vel= document.getElementById('iVel');
+                var vel = Number(txt_vel.value);
+                var res=document.getElementById('res');
+
+              res.innerHTML=`Notificacão: A sua velocidade atual é de <strong>${vel} km/h</strong>`;
+
+              if(vel>60){
+                res.innerHTML+="<p> <strong>Você está Multado por excesso de Velocidade!</strong> </p>";
+              } else{
+                res.innerHTML+="<p>Notificação:<strong> Dirija sempre com cinto de segurança!</strong> </p>";
+              }
+          
+            }
+        </script>
+
+</body>
+</html>

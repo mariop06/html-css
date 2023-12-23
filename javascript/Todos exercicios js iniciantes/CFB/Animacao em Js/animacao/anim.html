@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animação em JS</title>
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        #content{
+            background-color: rgba(200, 196, 196, 0.752);
+            width: 100%;
+            height: 30%;
+            padding: 10px;
+            display: flex ;
+            flex-direction: row;
+           
+        }
+        #buttoLeft{
+            background-color:  gray;
+            text-align: center;
+            font-size: 25px;
+
+            border-radius: 10px;
+            width: 200px;
+            height: 40px;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .buttoRight{
+            background-color:  gray;
+            text-align: center;
+            font-size: 25px;
+
+            border-radius: 10px;
+            width: 200px;
+            height: 40px;
+            padding: 10px;
+            margin: 10px;
+        }
+        #object{
+            background-color:  rgb(191, 69, 69);
+            text-align: center;
+            font-size: 25px;
+
+            border-radius: 10px;
+            width: 100px;
+            height: 40px;
+            padding: 10px;
+            margin: 10px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div id="content">
+        <div id="buttoLeft"> &lt;-</div>
+        <div id="buttoRight" class="buttoRight">-&gt;</div>
+        <div id="buttoStop" class="buttoRight">Stop</div>
+    </div>
+
+    <div id="object">
+
+    </div>
+    
+
+    <script src="anim.js"></script>
+</body>
+</html>

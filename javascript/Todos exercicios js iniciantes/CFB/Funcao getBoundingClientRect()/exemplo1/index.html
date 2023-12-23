@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getBoundingClientRect()</title>
+
+    <style>
+        *{
+            border: none;
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        .info{
+            display: flex;
+            justify-content: space-around;
+        }
+        .quadrado{
+            display: flex;
+            width: 100px;
+            height: 100px;
+
+            margin: 5px;
+        }
+        #quadrado1{
+            background-color: red;
+        }
+
+        #quadrado2{
+            background-color: blue;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="info" class="info">
+        <p id="posicaoX">Posicao X:</p>
+        <p id="posicaoY">Posicao Y:</p>
+        <p id="largura">Largura:</p>
+        <p id="altura">Altura:</p>
+    </div>
+    <div id="quadrado1" class="quadrado"></div>
+    <div id="quadrado2" class="quadrado"></div>
+
+    <script src="index.js"></script>
+</body>
+</html>

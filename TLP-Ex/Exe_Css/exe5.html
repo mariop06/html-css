@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 5</title>
+
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+            background-color: rgba(0, 187, 255, 0.445);
+            min-width: 300px;
+            margin: auto;
+            width: 95vw;
+        }
+        main{
+            background-color: white;
+            margin: auto;
+
+            width: 95%;
+            height: 350px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        section{
+            background-color: rgb(250, 255, 253);
+            display: inline-block;
+
+            width: 350px;
+            height: 340px;
+            border-radius: 10px;
+            text-align: left;
+        }
+        p{
+            text-align: left;
+        }
+        #left{
+            display: grid;
+            float: right;
+            position: relative;
+            left: -15px;
+
+        }
+        .geral{
+            background-color: rgba(197, 193, 193, 0.562);
+            padding-top: 15px;
+            border-radius: 3px;
+        }
+
+        span{
+            display: inline-block;
+            position: relative;
+            background-color: rgb(3, 98, 84);
+            text-align: center;
+            color: white;
+
+            left: -5px;
+            margin: 5px;
+            width: 55px;
+            height: 5px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        aside{
+            background-color: rgb(3, 98, 84);
+            margin: auto;
+            display: grid;
+            float: right;
+            color: white;
+
+            width: 300px;
+            height: 330px;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        p{
+            padding-left: 15px;
+        }
+
+        input{
+            position: relative;
+            border: none;
+            bottom: -30px;
+            height: 40px;
+            width: 270px;
+            border-radius: 5px;
+            background-color: rgb(3, 162, 162);
+        }
+        .flutuar{
+            display: grid;
+            float: right;
+            position: relative;
+            font-weight: bold;
+            color: rgb(4, 176, 162);
+
+            top: -10px;
+            font-size: 50px;
+        }
+
+
+
+    </style>
+
+</head>
+
+<body>
+    <main>
+        <section>
+            <p>Bill</p>
+            <p class="geral">
+                <label for="" >0</label>
+                <label for="" id="left">0</label>
+            </p>
+            <p>Select Tip %</p>
+            <p>
+                <span>5%</span>
+                <span>10%</span>
+                <span>15%</span>
+            </p>
+            <p>
+                <span>25%</span>
+                <span>50%</span>
+                <span>Custom</span>
+            </p>
+
+            <p>
+                Number of People
+            </p>
+            <p class="geral">
+                <label for="">0</label>
+                <label for="" id="left">0</label>
+            </p>
+        </section>
+        
+        <aside>
+            <p>
+                <label for="">Tip Account</label>
+                <label for="" class="flutuar">$0.00</label>
+            </p>
+            <p>
+                <label for="">Total</label>
+                <label for="" class="flutuar">$0.00</label>
+            </p>
+            <p>
+                <input type="button" value="Submit">
+            </p>
+        </aside>
+    </main>
+
+   
+    
+</body>
+
+</html>

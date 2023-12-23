@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 6</title>
+    
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 13px;
+        }
+
+
+        header{
+            background-color: rgb(6, 6, 43);
+            margin: auto;
+            width: 350px;
+            height: 50px;
+            border-radius: 10px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        p{
+            background-color: rgb(6, 6, 43);
+            margin: auto ;
+            position: relative;
+            top: 1px;
+            height: 45px;
+            font-size: 40px;
+            border-radius: 10px;
+           
+            color: white;
+            border: none;
+            text-align: end;
+        }
+
+        main{
+            margin: auto;
+            background-color: rgb(6, 6, 43);
+
+            width: 350px;
+            height: 350px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        div{
+            position: relative;
+            top: 20px;
+        }
+
+        button{
+            width: 80px;
+            height: 50px;
+
+            border-radius: 10px;
+            border: none;
+            margin: 2px;
+
+            font-size: 28px;
+            text-align: center;
+            padding: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.683);
+        }
+        #del{
+            background-color: #204892;
+            color: white;
+        }
+        #igual{
+            background-color: #e11a1a;
+            color: white;
+        }
+        #reset{
+            background-color: #204892;
+            color: white;
+        }
+
+        input{
+            margin: auto;
+            width: 160px;
+            height: 50px;
+            border-radius: 10px;
+
+            border: none;
+            margin: 6px;
+
+            font-size: 28px;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <p id="display">4585</p>
+    </header>
+
+    <main>
+        <div>
+            <button type="button" id="n7" class="num">7</button>
+            <button type="button" id="n8" class="num">8</button>
+            <button type="button" id="n9" class="num">9</button>
+            <button type="button" id="del">Del</button>
+        </div>
+        <div>
+            <button type="button" id="n4" class="num">4</button>
+            <button type="button" id="n5" class="num">5</button>
+            <button type="button" id="n6" class="num">6</button>
+            <button type="button" id="soma"  class="op">+</button>
+        </div>
+        <div>
+            <button type="button" id="n1" class="num">1</button>
+            <button type="button" id="n2" class="num">2</button>
+            <button type="button" id="n3" class="num">3</button>
+            <button type="button" id="sub" class="op">-</button>
+        </div>
+        <div>
+            <button type="button" id="point" class="num">.</button>
+            <button type="button" id="zero" class="num">0</button>
+            <button type="button" id="diviso" class="op">/</button>
+            <button type="button" id="mult" class="op">*</button>
+        </div>
+        <div>
+            <input type="reset" value="Reset" id="reset">
+            <input type="submit" value="=" id="igual">
+            <input type="button" value="copy" id="copy" style="width: 97%;">
+        </div>
+        <div></div>
+    </main>
+    
+   <script src="calc.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            border: none;
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        .controles{
+            display: flex;
+            justify-content: flex-start;
+            align-items: stretch;
+            width: 100%;
+            background-color: white;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+
+        .controle{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            align-items: flex-start;
+            width: 100%;
+            background-color: white;
+            border-radius: 5px;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        button{
+            cursor: pointer;
+            background-color: #888;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        input[type='number'], #num_objectos{
+            border: 1px solid black;
+            padding: 5px;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            width: 150px;
+        } 
+        .palco{
+            display: flex;
+            width: 100%;
+            min-height: 100vh;
+            min-height: fill-available;
+            min-height: -webkit-fill-available;
+            background-color: white;
+            border: 2px solid black;
+
+            position: absolute;
+            overflow: hidden;
+        }
+
+        .bola{
+            position: absolute;
+            border-radius: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="controles" class="controles">
+        <div class="controle">
+            <label for="">Numeros de Objectos</label>
+            <p id="num_objectos">0</p>
+        </div>
+
+        <div id="controle">
+            <label for="txt_quantidade">Quantidade Objectos</label>
+            <input type="number" value="0" min="0" id="txt_quantidade">
+            <button id="btn_add">Adicionar</button>
+        </div>
+        
+        <div class="controle">
+            <button id="btn_remover">Remover Todos</button>
+        </div>
+    </div>
+
+    <div id="palco" class="palco"></div>
+    <script src="prat.js"></script>
+</body>
+</html>

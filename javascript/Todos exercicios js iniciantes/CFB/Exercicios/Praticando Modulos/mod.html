@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio Sobre Modulo</title>
+
+    <style>
+        *{
+            border: none;
+            padding:0px;
+            margin: 0px;
+            box-sizing: border-box;
+         }
+
+         #form{
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+
+            border: 3px solid #888;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px;
+
+            margin-left: 5%;
+            margin-right: 5%;
+            width: 90%;
+         }
+
+         #campo{
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+
+            margin-bottom:10px ;
+            width: 100%;
+         }
+
+         input[type=text],input[type=tel],input[type=email]{
+            border: 1px solid black;
+            padding: 10px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+         }
+
+         #listaContato{
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            border: 3px solid #888;
+            border-radius: 10px;
+            margin: 10px;
+
+            margin-left: 5%;
+            margin-right: 5%;
+            width: 90%;
+         }
+
+         .contato{
+            display: flex;
+            flex-direction: column;
+
+            border: 1px solid black;
+            padding: 5px;
+            border-radius: 10px;
+            margin: 5px;
+
+            max-width: max-content;
+         }
+
+    </style>
+</head>
+<body>
+    <div id="form">
+        <div id="campo">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome">
+        </div>
+
+        <div id="campo">
+            <label for="telefone">Telefone</label>
+            <input type="tel" name="telefone" id="telefone">
+        </div>
+
+        <div id="campo">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email">
+        </div>
+
+        <div id="botao">
+          <button id="button_Gravar" >Gravar</button>
+        </div>
+    </div>
+
+    <div  id="listaContato"></div>
+
+    <script src="mod.js" type="module"></script>
+</body>
+</html>

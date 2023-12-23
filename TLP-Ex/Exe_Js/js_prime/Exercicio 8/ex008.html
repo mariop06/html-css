@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            margin: auto;
+            width: max-content;
+            height: 100vh;
+            align-items: center;
+        }
+        button{
+            border: 1px solid black;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        button:hover{
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="criar()">Criar Relatório</button>
+    <script>
+        function criar(){
+            var result,nota,pa,pr,na=0,nr=0
+            document.write(`<span style="
+                display: inline-block;
+                height: 20px;
+                width: 100px;
+                border: 1px solid black;
+                padding: 5px;">Número</span><span style="
+                display: inline-block;
+                height: 20px;
+                width: 100px;
+                border: 1px solid black;
+                padding: 5px;">Nota</span><span style="
+                display: inline-block;
+                height: 20px;
+                width: 100px;
+                border: 1px solid black;
+                padding: 5px;">Resultado</span><br>`)
+            for(let i=0; i<10;i++){
+                nota=(Math.random()*20).toFixed(0)
+                if(nota>=10){
+                    result="Aprovado"
+                    na++
+                }
+                else{
+                    result="Reprovado"
+                    nr++
+                }
+                document.write(`<span style="
+                display: inline-block;
+                height: 20px;
+                width: 100px;
+                border: 1px solid black;
+                padding: 5px;">${i+1}</span><span style="
+                display: inline-block;
+                height: 20px;
+                width: 100;
+                border: 1px solid black;
+                padding: 5px;">${nota}</span><span style="
+                display: inline-block;
+                height: 20px;
+                width: 100;
+                border: 1px solid black;
+                padding: 5px;">${result}</span>
+                <br>`)
+            }
+            document.write(`<strong>
+                <span style="
+                position:absolute;
+                bottom:0px;
+                ">Percentagem de aprovados: ${(na*100)/10}% | Percentagem de reprovados: ${(nr*100)/10}%</span>
+            </strong>`)
+        }
+    </script>
+</body>
+</html>

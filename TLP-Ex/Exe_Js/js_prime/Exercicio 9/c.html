@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{   
+            margin: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            gap: 10px;
+            font-size: 20pt;
+        }
+        input{
+            padding: 10px;
+            width: 400px;
+        }
+        button{
+            padding: 10px;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <label for="txtnums">Números: </label>
+    <input type="text" name="txtnotas" id="txtnums" maxlength="15">
+    <button onclick="execute()">Executar</button>
+    <script>
+        var txt=document.getElementById("txtnums")
+        addEventListener("onload",foco())
+        function execute(){
+            if(txt.value==""){
+                alert("Não introduziu nada ainda!")
+                foco()
+            }
+            else{
+            var texto=String(txt.value)
+            var nums=texto.split(",")
+            var qtd= nums.length
+            if(qtd<=5){
+                document.write("Maior número: " + nums.sort()[4])
+            }
+            else{
+                alert("Não podem ser mais de 5 números")
+                foco()
+            }
+        }
+        }
+        function foco(){
+            txt.focus()
+        }
+    </script>
+</body>
+</html>

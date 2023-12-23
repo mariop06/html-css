@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 9f</title>
+
+</head>
+
+<body>
+    <main>
+        <p>
+            <input type="text" name="text" id="itext" placeholder="Digite a Texto" >
+            <input type="button" value="Inverter" id="inverter">
+
+        </p>
+    </main>
+
+    <script>
+        const text=document.getElementById('itext');
+        const elemento= document.createElement('p');
+        const buttom= document.getElementById('inverter');
+
+         buttom.addEventListener('click',()=>{
+            var obter= text.value;
+            elemento.textContent=obter.split('').reverse().join('');
+            document.body.appendChild(elemento)
+            
+        });
+    </script>
+    
+</body>
+</html>
